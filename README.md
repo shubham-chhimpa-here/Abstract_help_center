@@ -1,6 +1,6 @@
 Here's an example `README.md` file for your Node.js and Express application that includes setting up the environment, running the application, and using the API:
 
-```markdown
+
 # Card Help Center API
 
 This is a simple API for managing cards in a help center. The API is built using Node.js, Express.js, and MongoDB (with Mongoose ORM). It includes endpoints for creating, retrieving, and searching cards based on their titles.
@@ -11,15 +11,14 @@ This is a simple API for managing cards in a help center. The API is built using
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Environment Variables](#environment-variables)
-- [License](#license)
 
 ## Installation
 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/card-help-center-api.git
-   cd card-help-center-api
+   git clone https://github.com/shubham-chhimpa-here/Abstract_help_center.git
+   cd Abstract_help_center
    ```
 
 2. **Install dependencies:**
@@ -43,13 +42,12 @@ This is a simple API for managing cards in a help center. The API is built using
    ```dotenv
    DB_URI=mongodb://localhost:27017/yourDatabaseName
    PORT=3000
-   JWT_SECRET=your-jwt-secret-here
    ```
 
 4. **Start the server:**
 
    ```bash
-   npm start
+   npm run dev
    ```
 
    The server will start on the port specified in your `.env` file (default is `3000`).
@@ -67,7 +65,7 @@ This is a simple API for managing cards in a help center. The API is built using
 - To start the application in production mode:
 
   ```bash
-  npm start
+  npm run start
   ```
 
 The API will be accessible at `http://localhost:3000` by default.
@@ -117,19 +115,15 @@ The following environment variables need to be set in your `.env` file:
 
 - `DB_URI`: The MongoDB connection string.
 - `PORT`: The port on which the server will run (default: 3000).
-- `JWT_SECRET`: The secret key used for JWT token signing.
 
 Example `.env` file:
 
 ```dotenv
 DB_URI=mongodb://localhost:27017/yourDatabaseName
 PORT=3000
-JWT_SECRET=your-jwt-secret-here
 ```
 
-## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ```
 
@@ -142,7 +136,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 3. **API Endpoints**: Documents the available API routes, including methods, descriptions, required parameters, and expected responses.
 
 4. **Environment Variables**: Lists required environment variables and explains their purpose, along with an example.
-
-5. **License**: Mentions the licensing information, usually referencing a separate `LICENSE` file.
-
-This `README.md` file is a good starting point for documenting your application, and you can expand it with additional details as needed.
