@@ -16,7 +16,7 @@ export const RequestForm = () => {
 
         let bodyContent = JSON.stringify(formData);
 
-        let response = await fetch("http://localhost:3000/cards/", {
+        let response = await fetch("/cards", {
             method: "POST",
             body: bodyContent,
             headers: headersList

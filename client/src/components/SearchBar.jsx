@@ -11,7 +11,7 @@ const SearchBar = ({obj}) => {
       let headersList = {
       }
   
-      let response = await fetch(`http://localhost:3000/cards/search?searchString=${title}`, {
+      let response = await fetch(`/cards/search?searchString=${title}`, {
         method: "GET",
         headers: headersList
       });

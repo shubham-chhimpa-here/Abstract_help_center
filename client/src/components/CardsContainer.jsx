@@ -9,7 +9,7 @@ export const CardsContainer = ({obj}) => {
 
         }
 
-        let response = await fetch("http://localhost:3000/cards/", {
+        let response = await fetch("/cards", {
             method: "GET",
             headers: headersList
         });
